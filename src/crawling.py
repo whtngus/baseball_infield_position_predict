@@ -4,6 +4,8 @@
 import urllib.request
 from bs4 import BeautifulSoup
 import os
+import json
+
 
 test_urls = ["//crdfcowjurxm984864.cdn.ntruss.com/person/middle/2019/76232.jpg선수명: 양의지등번호: No.25생년월일: 1987년 06월 05일포지션: 포수(우투우타)신장/체중: 179cm/85kg경력: 송정동초-무등중-진흥고-두산-경찰-두산입단 계약금: 3000만원연봉: 200000만원지명순위: 06 두산 2차 8라운드 59순위입단년도: 06두산"]
 split_tag = ".jpg"
@@ -32,3 +34,5 @@ for test_url in test_urls:
 
 
 
+
+json_val = json.dumps(user_historys)
